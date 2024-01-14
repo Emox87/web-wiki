@@ -1,0 +1,15 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+}
+
+html {
+}
+
+body {
+}
