@@ -6,10 +6,58 @@
 
 /* CSS Variables */
 :root {
+  --body-background-color: rgba(18, 18, 18, 0.885);
+  --section-background-color: whitesmoke;
 }
 
 html {
+  font-size: 62.5%;
 }
 
 body {
+  padding: 1rem;
+  font-size: 1.75rem;
+  background-color: var(--body-background-color);
+}
+
+section {
+  background-color: var(--section-background-color);
+  margin: 4rem 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: justify;
+}
+
+section ul,
+section ol {
+}
+
+#html {
+  border-top: 0.5rem solid rgb(242, 171, 57);
+  border-bottom: 0.5rem solid rgb(242, 171, 57);
+}
+
+#css {
+  border-top: 0.5rem solid rgb(182, 123, 246);
+  border-bottom: 0.5rem solid rgb(182, 123, 246);
+}
+
+#js {
+  border-top: 0.5rem solid rgb(247, 78, 78);
+  border-bottom: 0.5rem solid rgb(247, 78, 78);
+}
+
+#react {
+  border-top: 0.5rem solid rgb(23, 160, 201);
+  border-bottom: 0.5rem solid rgb(23, 160, 201);
+}
+
+#node {
+  border-top: 0.5rem solid rgb(99, 255, 21);
+  border-bottom: 0.5rem solid rgb(99, 255, 21);
+}
+
+#mongodb {
+  border-top: 0.5rem solid rgb(255, 21, 228);
+  border-bottom: 0.5rem solid rgb(255, 21, 228);
 }
