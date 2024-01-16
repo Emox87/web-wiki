@@ -1,3 +1,6 @@
+/* Google Font Roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 *::before,
 *::after,
 * {
@@ -7,16 +10,22 @@
 /* CSS Variables */
 :root {
   --body-background-color: rgba(18, 18, 18, 0.885);
+  --roboto-font-family: "Roboto", sans-serif;
   --section-background-color: whitesmoke;
 }
 
 html {
+  /* 1rem = 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   padding: 1rem;
+  line-height: 1.5;
   font-size: 1.75rem;
+  font-weight: 300;
+  font-family: var(--roboto-font-family);
   background-color: var(--body-background-color);
 }
 
@@ -28,33 +37,29 @@ section {
   text-align: justify;
 }
 
-section ul,
-section ol {
-}
-
 #html {
-  border-top: 0.5rem solid rgb(242, 171, 57);
-  border-bottom: 0.5rem solid rgb(242, 171, 57);
+  border-top: 0.5rem solid rgba(242, 171, 57, 0.7);
+  border-bottom: 0.5rem solid rgba(242, 171, 57, 1);
 }
 
 #css {
-  border-top: 0.5rem solid rgb(182, 123, 246);
-  border-bottom: 0.5rem solid rgb(182, 123, 246);
+  border-top: 0.5rem solid rgba(182, 123, 246, 0.7);
+  border-bottom: 0.5rem solid rgba(182, 123, 246, 1);
 }
 
 #js {
-  border-top: 0.5rem solid rgb(247, 78, 78);
-  border-bottom: 0.5rem solid rgb(247, 78, 78);
+  border-top: 0.5rem solid rgb(247, 78, 78, 0.7);
+  border-bottom: 0.5rem solid rgb(247, 78, 78, 1);
 }
 
 #react {
-  border-top: 0.5rem solid rgb(23, 160, 201);
-  border-bottom: 0.5rem solid rgb(23, 160, 201);
+  border-top: 0.5rem solid rgb(23, 160, 201, 0.7);
+  border-bottom: 0.5rem solid rgb(23, 160, 201, 1);
 }
 
 #node {
-  border-top: 0.5rem solid rgb(99, 255, 21);
-  border-bottom: 0.5rem solid rgb(99, 255, 21);
+  border-top: 0.5rem solid rgb(99, 255, 21, 0.7);
+  border-bottom: 0.5rem solid rgb(99, 255, 21, 1);
 }
 
 #mongodb {
