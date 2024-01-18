@@ -12,6 +12,13 @@
   --body-background-color: rgba(18, 18, 18, 0.885);
   --roboto-font-family: "Roboto", sans-serif;
   --section-background-color: whitesmoke;
+  --section-html-color: rgb(242, 171, 57);
+  --section-css-color: rgb(182, 123, 246);
+  --section-js-color: rgb(247, 78, 78);
+  --section-react-color: rgb(23, 160, 201);
+  --section-node-color: rgb(49, 178, 49);
+  --section-mongodb-color: rgb(236, 35, 166);
+  --section-links-color: rgb(140, 137, 137);
 }
 
 html {
@@ -37,32 +44,75 @@ section {
   text-align: justify;
 }
 
+h1.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title a:link,
+.section-title a:visited {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--section-links-color);
+}
+
+.section-title a:hover,
+.section-title a:active {
+  text-decoration: underline;
+}
+
 #html {
-  border-top: 0.5rem solid rgba(242, 171, 57, 0.7);
-  border-bottom: 0.5rem solid rgba(242, 171, 57, 1);
+  border-top: 1rem solid var(--section-html-color);
+  border-bottom: 1rem solid var(--section-html-color);
+}
+
+#html h1.section-title {
+  color: var(--section-html-color);
 }
 
 #css {
-  border-top: 0.5rem solid rgba(182, 123, 246, 0.7);
-  border-bottom: 0.5rem solid rgba(182, 123, 246, 1);
+  border-top: 1rem solid var(--section-css-color);
+  border-bottom: 1rem solid var(--section-css-color);
+}
+
+#css h1.section-title {
+  color: var(--section-css-color);
 }
 
 #js {
-  border-top: 0.5rem solid rgb(247, 78, 78, 0.7);
-  border-bottom: 0.5rem solid rgb(247, 78, 78, 1);
+  border-top: 1rem solid var(--section-js-color);
+  border-bottom: 1rem solid var(--section-js-color);
+}
+
+#js h1.section-title {
+  color: var(--section-js-color);
 }
 
 #react {
-  border-top: 0.5rem solid rgb(23, 160, 201, 0.7);
-  border-bottom: 0.5rem solid rgb(23, 160, 201, 1);
+  border-top: 1rem solid var(--section-react-color);
+  border-bottom: 1rem solid var(--section-react-color);
+}
+
+#react h1.section-title {
+  color: var(--section-react-color);
 }
 
 #node {
-  border-top: 0.5rem solid rgb(99, 255, 21, 0.7);
-  border-bottom: 0.5rem solid rgb(99, 255, 21, 1);
+  border-top: 1rem solid var(--section-node-color);
+  border-bottom: 1rem solid var(--section-node-color);
+}
+
+#node h1.section-title {
+  color: var(--section-node-color);
 }
 
 #mongodb {
-  border-top: 0.5rem solid rgb(255, 21, 228);
-  border-bottom: 0.5rem solid rgb(255, 21, 228);
+  border-top: 1rem solid var(--section-mongodb-color);
+  border-bottom: 1rem solid var(--section-mongodb-color);
+}
+
+#mongodb h1.section-title {
+  color: var(--section-mongodb-color);
 }
