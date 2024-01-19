@@ -18,7 +18,8 @@
   --section-react-color: rgb(23, 160, 201);
   --section-node-color: rgb(49, 178, 49);
   --section-mongodb-color: rgb(236, 35, 166);
-  --section-links-color: rgb(140, 137, 137);
+  --section-links-color: #333;
+  --sidebar-active-link-background-color: rgb(242, 171, 57);
 }
 
 html {
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  padding: 1rem;
+  padding: 0;
   line-height: 1.5;
   font-size: 1.75rem;
   font-weight: 300;
@@ -36,10 +37,46 @@ body {
   background-color: var(--body-background-color);
 }
 
+#sidebar {
+  background-color: rgb(109, 109, 107);
+  overflow: hidden;
+  width: 14rem;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 1rem;
+}
+
+#sidebar a:link,
+#sidebar a:visited {
+  display: block;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-align: left;
+  background-color: transparent;
+  color: white;
+}
+
+#sidebar a:hover,
+#sidebar a:active {
+  background: lightslategray;
+  color: whitesmoke;
+}
+
+#sidebar a.active {
+  font-weight: bold;
+  background-color: var(--sidebar-active-link-background-color);
+  color: white;
+}
+
 section {
   background-color: var(--section-background-color);
-  margin: 4rem 2rem;
   padding: 2rem;
+  /* margin-left: 16rem; */
+  margin: 4rem 4rem 4rem 18rem;
   border-radius: 1rem;
   text-align: justify;
 }
