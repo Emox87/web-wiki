@@ -19,7 +19,7 @@
   --section-node-color: rgb(49, 178, 49);
   --section-mongodb-color: rgb(236, 35, 166);
   --section-links-color: #333;
-  --sidebar-active-link-background-color: rgb(242, 171, 57);
+  --sidebar-active-link-background-color: rgb(32, 34, 34);
 }
 
 html {
@@ -30,8 +30,8 @@ html {
 
 body {
   padding: 0;
-  line-height: 1.5;
-  font-size: 1.75rem;
+  line-height: 1.7;
+  font-size: 1.55rem;
   font-weight: 300;
   font-family: var(--roboto-font-family);
   background-color: var(--body-background-color);
@@ -72,13 +72,38 @@ body {
   color: white;
 }
 
+#sidebar a[href="#html"].active {
+  background-color: var(--section-html-color);
+}
+#sidebar a[href="#css"].active {
+  background-color: var(--section-css-color);
+}
+#sidebar a[href="#js"].active {
+  background-color: var(--section-js-color);
+}
+#sidebar a[href="#react"].active {
+  background-color: var(--section-react-color);
+}
+#sidebar a[href="#node"].active {
+  background-color: var(--section-node-color);
+}
+#sidebar a[href="#mongodb"].active {
+  background-color: var(--section-mongodb-color);
+}
+
 section {
   background-color: var(--section-background-color);
-  padding: 2rem;
+  padding: 4rem;
+  font-size: 1.45rem;
   /* margin-left: 16rem; */
   margin: 4rem 4rem 4rem 18rem;
   border-radius: 1rem;
   text-align: justify;
+}
+
+ol li p span {
+  font-weight: bold;
+  color: #555;
 }
 
 h1.section-title {
@@ -93,6 +118,7 @@ h1.section-title {
   font-weight: 400;
   font-size: 2rem;
   color: var(--section-links-color);
+  position: relative;
 }
 
 .section-title a:hover,
