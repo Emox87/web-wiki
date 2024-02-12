@@ -1,181 +1,88 @@
-/* Google Font Roboto  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-*::before,
-*::after,
-* {
-  box-sizing: border-box;
-}
-
 /* CSS Variables */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --body-background-color: rgba(18, 18, 18, 0.885);
   --roboto-font-family: "Roboto", sans-serif;
   --section-background-color: whitesmoke;
-  --section-html-color: rgb(242, 171, 57);
-  --section-css-color: rgb(182, 123, 246);
-  --section-js-color: rgb(247, 78, 78);
-  --section-react-color: rgb(23, 160, 201);
-  --section-node-color: rgb(49, 178, 49);
-  --section-mongodb-color: rgb(236, 35, 166);
+  --section-html-color: #e34f26;
+  --section-css-color: #1572b6;
+  --section-js-color: #393;
+  --section-react-color: #61dafb;
+  --section-node-color: #393;
+  --section-mongodb-color: #47a248;
   --section-links-color: #333;
-  --sidebar-active-link-background-color: rgb(32, 34, 34);
-}
+  --sidebar-active-link-background-color: rgb(32, 34, 34); }
+
+body {
+  line-height: 1.7;
+  font-size: 1.55rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif; }
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box; }
 
 html {
-  /* 1rem = 10px */
   font-size: 62.5%;
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 body {
   padding: 0;
-  line-height: 1.7;
-  font-size: 1.55rem;
-  font-weight: 300;
-  font-family: var(--roboto-font-family);
-  background-color: var(--body-background-color);
-}
+  margin: 0;
+  background-color: var(--body-background-color); }
 
-#sidebar {
-  background-color: rgb(109, 109, 107);
-  overflow: hidden;
-  width: 14rem;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  border-radius: 1rem;
-}
-
-#sidebar a:link,
-#sidebar a:visited {
-  display: block;
-  padding: 1rem 3rem;
-  text-decoration: none;
-  font-size: 1.8rem;
-  text-align: left;
-  background-color: transparent;
-  color: white;
-}
-
-#sidebar a:hover,
-#sidebar a:active {
-  background: lightslategray;
-  color: whitesmoke;
-}
-
-#sidebar a.active {
-  font-weight: bold;
-  background-color: var(--sidebar-active-link-background-color);
-  color: white;
-}
-
-#sidebar a[href="#html"].active {
-  background-color: var(--section-html-color);
-}
-#sidebar a[href="#css"].active {
-  background-color: var(--section-css-color);
-}
-#sidebar a[href="#js"].active {
-  background-color: var(--section-js-color);
-}
-#sidebar a[href="#react"].active {
-  background-color: var(--section-react-color);
-}
-#sidebar a[href="#node"].active {
-  background-color: var(--section-node-color);
-}
-#sidebar a[href="#mongodb"].active {
-  background-color: var(--section-mongodb-color);
-}
-
-section {
+.section {
   background-color: var(--section-background-color);
-  padding: 4rem;
-  font-size: 1.45rem;
-  /* margin-left: 16rem; */
-  margin: 4rem 4rem 4rem 18rem;
+  padding: 6rem;
+  font-size: 1.75rem;
+  margin: 4rem 4rem;
   border-radius: 1rem;
   text-align: justify;
-}
+  position: relative; }
+  .section__icon {
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    transform: translateY(15%); }
+  .section--html {
+    border-top: 1rem solid var(--section-html-color);
+    border-bottom: 1rem solid var(--section-html-color); }
+  .section--css {
+    border-top: 1rem solid var(--section-css-color);
+    border-bottom: 1rem solid var(--section-css-color); }
+  .section--js {
+    border-top: 1rem solid var(--section-js-color);
+    border-bottom: 1rem solid var(--section-js-color); }
+  .section--react {
+    border-top: 1rem solid var(--section-react-color);
+    border-bottom: 1rem solid var(--section-react-color); }
+  .section--node {
+    border-top: 1rem solid var(--section-node-color);
+    border-bottom: 1rem solid var(--section-node-color); }
+  .section--mongodb {
+    border-top: 1rem solid var(--section-mongodb-color);
+    border-bottom: 1rem solid var(--section-mongodb-color); }
+  .section__title {
+    font-size: 4rem;
+    display: inline-block;
+    align-items: center;
+    text-shadow: 2px 2px 4px black; }
+    .section__title--html {
+      color: var(--section-html-color); }
+    .section__title--css {
+      color: var(--section-css-color); }
+    .section__title--js {
+      color: var(--section-js-color); }
+    .section__title--react {
+      color: var(--section-react-color); }
+    .section__title--node {
+      color: var(--section-node-color); }
+    .section__title--mongodb {
+      color: var(--section-mongodb-color); }
 
-ol li p span {
-  font-weight: bold;
-  color: #555;
-}
-
-h1.section-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.section-title a:link,
-.section-title a:visited {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 2rem;
-  color: var(--section-links-color);
-  position: relative;
-}
-
-.section-title a:hover,
-.section-title a:active {
-  text-decoration: underline;
-}
-
-#html {
-  border-top: 1rem solid var(--section-html-color);
-  border-bottom: 1rem solid var(--section-html-color);
-}
-
-#html h1.section-title {
-  color: var(--section-html-color);
-}
-
-#css {
-  border-top: 1rem solid var(--section-css-color);
-  border-bottom: 1rem solid var(--section-css-color);
-}
-
-#css h1.section-title {
-  color: var(--section-css-color);
-}
-
-#js {
-  border-top: 1rem solid var(--section-js-color);
-  border-bottom: 1rem solid var(--section-js-color);
-}
-
-#js h1.section-title {
-  color: var(--section-js-color);
-}
-
-#react {
-  border-top: 1rem solid var(--section-react-color);
-  border-bottom: 1rem solid var(--section-react-color);
-}
-
-#react h1.section-title {
-  color: var(--section-react-color);
-}
-
-#node {
-  border-top: 1rem solid var(--section-node-color);
-  border-bottom: 1rem solid var(--section-node-color);
-}
-
-#node h1.section-title {
-  color: var(--section-node-color);
-}
-
-#mongodb {
-  border-top: 1rem solid var(--section-mongodb-color);
-  border-bottom: 1rem solid var(--section-mongodb-color);
-}
-
-#mongodb h1.section-title {
-  color: var(--section-mongodb-color);
-}
+.header {
+  min-height: 7vh;
+  margin: 0 4rem;
+  background-color: lightslategrey; }

@@ -1,0 +1,89 @@
+.section {
+    background-color: var(--section-background-color);
+    padding: 6rem;
+    font-size: 1.75rem;
+    margin: 4rem 4rem;
+    border-radius: 1rem;
+    text-align: justify;
+    position: relative;
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        display: inline-block;
+        transform: translateY(15%);
+        // position: absolute;
+        // top: 10rem;
+        // right: 7rem;
+    }
+
+    &--html {
+        border-top: 1rem solid var(--section-html-color);
+        border-bottom: 1rem solid var(--section-html-color);
+    }
+
+    &--css {
+        border-top: 1rem solid var(--section-css-color);
+        border-bottom: 1rem solid var(--section-css-color);
+    }
+
+    &--js {
+        border-top: 1rem solid var(--section-js-color);
+        border-bottom: 1rem solid var(--section-js-color);
+    }
+
+    &--react {
+        border-top: 1rem solid var(--section-react-color);
+        border-bottom: 1rem solid var(--section-react-color);
+    }
+
+    &--node {
+        border-top: 1rem solid var(--section-node-color);
+        border-bottom: 1rem solid var(--section-node-color);
+    }
+
+    &--mongodb {
+        border-top: 1rem solid var(--section-mongodb-color);
+        border-bottom: 1rem solid var(--section-mongodb-color);
+    }
+
+
+    &__title {
+        font-size: 4rem;
+        display: inline-block;
+        align-items: center;
+
+        text-shadow: 2px 2px 4px black;
+
+        &--html {
+            color: var(--section-html-color);
+
+        }
+
+        &--css {
+            color: var(--section-css-color);
+        }
+
+        &--js {
+            color: var(--section-js-color);
+        }
+
+        &--react {
+            color: var(--section-react-color);
+        }
+
+        &--node {
+            color: var(--section-node-color);
+        }
+
+        &--mongodb {
+            color: var(--section-mongodb-color);
+        }
+    }
+}
+
+.header {
+    min-height: 7vh;
+    margin: 0 4rem;
+    background-color: lightslategrey;
+}
